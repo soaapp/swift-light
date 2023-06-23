@@ -12,14 +12,8 @@ class ViewController: UIViewController {
     var lightOn = true
     
     
-    @IBOutlet var lightButton: UIButton!
-    
     fileprivate func toggleFlashlight() {
-        if lightOn {
-            view.backgroundColor = .white
-        } else {
-            view.backgroundColor = .black
-        }
+        view.backgroundColor = lightOn ? .white : .black
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
